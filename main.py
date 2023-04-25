@@ -1,8 +1,6 @@
 from functions import *
-from datetime import *
 
+list_5_last_date = []
 for operation in load_operations():
-    print(operation["state"])
-    datetime_ = operation["date"]
-    print(datetime_)
-    print(datetime(datetime_))
+    if operation["date"] > list_5_last_date[-1]:
+        list_5_last_date.append(operation["date"])
