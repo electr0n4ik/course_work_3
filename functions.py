@@ -18,6 +18,8 @@ def get_5_last_operations(list_operations):
     :param list_operations: список операций
     :return: 5 последних выполненных операций
     """
-
+    list_executed = []
     for operation in list_operations:
-        pass
+        if operation["state"] == "EXECUTED":
+            list_executed.append(operation)
+
