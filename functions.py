@@ -23,3 +23,13 @@ def get_5_last_operations(list_operations):
         if operation["state"] == "EXECUTED":
             list_executed.append(operation)
 
+# 3
+def get_split_date_time(datetime_):
+    """
+
+    :param datetime_:
+    :return:
+    """
+    date_ = None
+    time_ = None
+    return datetime_.split("T")
