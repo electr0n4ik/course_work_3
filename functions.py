@@ -38,7 +38,7 @@ def format_operations(operation_dict):
         from_card = operation_dict['from']
         # Маскируем номер карты или счета
         if 'Счет' in from_card:
-            from_card_masked = f"{from_card[:-20]}** {from_card[-4:]}"
+            from_card_masked = f"{from_card[:-20]}**{from_card[-4:]}"
         else:
             from_card_masked = f"{from_card[:-12]} {from_card[-12:-10]}** **** {from_card[-4:]}"
     else:
@@ -75,6 +75,7 @@ def get_last_5_operations(operations_lict):
 
     return sorted_operations[:5]
 
+print(get_last_5_operations(load_operations()))
 
 # 5
 def print_last_five_operations(operations_list):
