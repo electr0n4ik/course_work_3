@@ -43,7 +43,8 @@ Visa Platinum 7000 79** **** 6361 -> Счет **9638
 использует функцию format_operations_by_type() для форматирования операций по типу,
 и выводит отформатированные операции в консоль.
 
-<font color="green">Критерии выполнены:</font>
+
+<span style="color:green">Критерии выполнены:</span>
 
 <font color="green">- проект выложен на GitHub;</font>
 
